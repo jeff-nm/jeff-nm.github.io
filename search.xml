@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Git Pages</title>
+    <url>/2022/08/29/Git-Pages/</url>
+    <content><![CDATA[<h2 id="1-参考文档"><a href="#1-参考文档" class="headerlink" title="1.参考文档"></a>1.参考文档</h2><p><a href="https://zhuanlan.zhihu.com/p/26625249">GitHub+Hexo 搭建个人网站详细教程</a><br><a href="https://yushuaige.github.io/2021/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2(%E4%B8%89)%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8E%20Gitee%20pages%20%E5%BB%BA%E7%AB%99/#%E5%9B%9B%E3%80%81%E5%90%8E%E7%BB%AD">从零开始免费搭建自己的博客(三)——基于 Gitee pages 建站</a><br><a href="https://unclevicky.github.io/rabbitBear/2021/02/07/hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">hexo 博客基础环境搭建（非常详细）</a><br><a href="https://xring.info/2018/hexo-category-and-tag-page.html">Hexo 博客创建 categories 和 tags 页面</a><br><a href="https://blog.csdn.net/qq_41753944/article/details/104658840">Hexo 添加分类及标签不能显示解决方法</a><br><a href="https://zhuanlan.zhihu.com/p/183977963">如何拥有多个 GitHub Pages</a></p>
+<p><a href="https://juejin.cn/post/7049317964281020446">Github Actions 实现仓库自动同步 Gitee 并更新文档</a><br><a href="https://docs.github.com/cn/enterprise-server@3.4/actions/using-workflows/workflow-syntax-for-github-actions">Github 工作流程语法</a></p>
+<h2 id="2-Hexo"><a href="#2-Hexo" class="headerlink" title="2.Hexo"></a>2.Hexo</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo  <span class="comment"># 下载</span></span><br><span class="line">hexo init &#123;name&#125;  <span class="comment"># 初始化博客</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> &#123;name&#125;</span><br><span class="line">npm install   <span class="comment"># 下载依赖</span></span><br><span class="line"><span class="comment"># myBlog</span></span><br><span class="line"><span class="comment"># ├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。</span></span><br><span class="line"><span class="comment"># ├── package.json</span></span><br><span class="line"><span class="comment"># ├── scaffolds # 模版文件夹</span></span><br><span class="line"><span class="comment"># ├── source  # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹</span></span><br><span class="line"><span class="comment"># |   ├── _drafts # 草稿文件</span></span><br><span class="line"><span class="comment"># |   └── _posts # 文章Markdowm文件</span></span><br><span class="line"><span class="comment"># └── themes  # 主题文件夹</span></span><br><span class="line"></span><br><span class="line">hexo s    <span class="comment"># hexo server: 本地启动 Hexo 服务器进行测试</span></span><br><span class="line"></span><br><span class="line">hexo d    <span class="comment"># hexo deploy: 部署</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="插件设置"><a href="#插件设置" class="headerlink" title="插件设置"></a>插件设置</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save  <span class="comment"># 支持搜索</span></span><br><span class="line">npm install hexo-generator-feed --save  <span class="comment"># 用于生成RSS订阅</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h3><h4 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h4 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h4 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h4 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="3-Github-Pages"><a href="#3-Github-Pages" class="headerlink" title="3.Github Pages"></a>3.Github Pages</h2><blockquote>
+<p><code>https://xxx.github.io/</code></p>
+</blockquote>
+<ol>
+<li>创建一个名为 <code>&#123;username&#125;.github.io</code> 的仓库<ul>
+<li><code>username</code> 可以从用户头像下的 <strong>sign as xxx</strong> 获取</li>
+</ul>
+</li>
+<li>从仓库的 <strong>settings –&gt; pages</strong> 配置相关属性</li>
+</ol>
+<h2 id="4-GitHub-Actions"><a href="#4-GitHub-Actions" class="headerlink" title="4.GitHub Actions"></a>4.GitHub Actions</h2><blockquote>
+<p>将 <strong>Github</strong> 的内容同步至 <strong>Gitee</strong></p>
+</blockquote>
+<h3 id="SSH-配置文件存储路径："><a href="#SSH-配置文件存储路径：" class="headerlink" title="SSH 配置文件存储路径："></a>SSH 配置文件存储路径：</h3><ol>
+<li>windows: <code>c:/Users/&#123;username&#125;/.ssh/</code></li>
+</ol>
+<h3 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h3><ol>
+<li>项目下创建 <code>.github/workflows</code> 文件夹，并创建 <code>.yml</code> 文件</li>
+<li>编辑 <code>yml</code> 文件</li>
+<li>配置 <strong>相应仓库</strong>，添加 <strong>secret</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>

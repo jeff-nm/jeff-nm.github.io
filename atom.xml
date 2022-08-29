@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>朝花夕拾</title>
+  
+  <subtitle>非淡泊无以明志，非宁静无以致远</subtitle>
+  <link href="http://jeff-nm.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://jeff-nm.github.io/"/>
+  <updated>2022-08-29T08:52:17.879Z</updated>
+  <id>http://jeff-nm.github.io/</id>
+  
+  <author>
+    <name>Jeff</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git Pages</title>
+    <link href="http://jeff-nm.github.io/2022/08/29/Git-Pages/"/>
+    <id>http://jeff-nm.github.io/2022/08/29/Git-Pages/</id>
+    <published>2022-08-29T05:56:01.000Z</published>
+    <updated>2022-08-29T08:52:17.879Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-参考文档&quot;&gt;&lt;a href=&quot;#1-参考文档&quot; class=&quot;headerlink&quot; title=&quot;1.参考文档&quot;&gt;&lt;/a&gt;1.参考文档&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="杂记" scheme="http://jeff-nm.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+    <category term="git" scheme="http://jeff-nm.github.io/tags/git/"/>
+    
+    <category term="hexo" scheme="http://jeff-nm.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
